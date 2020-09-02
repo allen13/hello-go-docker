@@ -6,5 +6,8 @@ ADD main.go ./
 
 RUN go build main.go
 
+# First normal non-root user in linux
+USER 1000
+
 CMD ["/main"]
 
